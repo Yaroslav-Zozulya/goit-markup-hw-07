@@ -35,11 +35,11 @@
     justify-content: center;
     align-items: center;
     transition: border-color 250ms var(--transition-timing);
-}
 
-.clients-link:hover,
-.clients-link:focus {
-    border-color: var(--links-hover-color);
+    &:hover,
+    &:focus {
+        border-color: var(--links-hover-color);
+    }
 }
 
 .clients-icon {
@@ -47,9 +47,9 @@
     height: 60px;
     fill: var(--our-team-sicoal-icon);
     transition: fill 250ms var(--transition-timing);
-}
 
-.clients-link:hover .clients-icon,
-.clients-link:focus .clients-icon {
-    fill: var(--links-hover-color);
+    .clients-link:hover &,
+    .clients-link:focus & {
+        fill: var(--links-hover-color);
+    }
 }

@@ -52,19 +52,19 @@
 
 .our-team-social-link {
     transition: background-color 250ms var(--transition-timing);
-}
 
-.our-team-social-link:hover,
-.our-team-social-link:focus {
-    background-color: var(--links-hover-color);
-}
-
-.our-team-social-link:hover .our-team-social-icon,
-.our-team-social-link:focus .our-team-social-icon {
-    fill: var(--first-background-color);
+    &:hover,
+    &:focus {
+        background-color: var(--links-hover-color);
+    }
 }
 
 .our-team-social-icon {
     fill: var(--our-team-sicoal-icon);
     transition: fill 250ms var(--transition-timing);
+
+    .our-team-social-link:hover &,
+    .our-team-social-link:focus & {
+        fill: var(--first-background-color);
+    }
 }

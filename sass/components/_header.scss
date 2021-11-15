@@ -2,22 +2,27 @@
     border-bottom: 1px solid var(--header-border-bottom);
 }
 
-.header-container {
+.header__container {
     display: flex;
     align-items: center;
 }
 
-.navigation-list {
-    display: flex;
+.logo {
+    font-family: Raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--links-hover-color);
 }
 
-.logo-header {
+.logo--header {
     margin-right: 93px;
     padding-top: 24px;
     padding-bottom: 25px;
 }
 
-.logo span {
+.logo--dark {
     color: var(--header-logo);
 }
 
@@ -29,16 +34,25 @@
     letter-spacing: 0.02em;
 }
 
-.navigation-link {
+.navigation__list {
+    display: flex;
+}
+
+.navigation__item:not(:last-child) {
+    position: relative;
+    margin-right: 50px;
+}
+
+.navigation__link {
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
     transition: color 250ms var(--transition-timing);
-}
 
-.navigation-item:not(:last-child) {
-    position: relative;
-    margin-right: 50px;
+    &:hover,
+    &:focus {
+        color: var(--links-hover-color);
+    }
 }
 
 .contacts {
@@ -50,40 +64,40 @@
     color: var(--primery-text-color);
 }
 
-.contacts-icon-envelope {
-    width: 16px;
-    height: 12px;
-    margin-right: 10px;
-    fill: var(--primery-text-color);
-    transition: fill 250ms var(--transition-timing);
+.contacts__item:not(:last-child) {
+    margin-right: 50px;
 }
 
-.contacts-link:hover .contacts-icon-envelope,
-.contacts-link:focus .contacts-icon-envelope {
-    fill: var(--links-hover-color);
-}
-
-.contacts-icon-smartphone {
-    width: 10px;
-    height: 16px;
-    margin-right: 10px;
-    fill: var(--primery-text-color);
-    transition: fill 250ms var(--transition-timing);
-}
-
-.contacts-link:hover .contacts-icon-smartphone,
-.contacts-link:focus .contacts-icon-smartphone {
-    fill: var(--links-hover-color);
-}
-
-.contacts-link {
+.contacts__link {
     display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
     align-items: center;
     transition: color 250ms var(--transition-timing);
+
+    &:hover,
+    &:focus {
+        color: var(--links-hover-color);
+    }
 }
 
-.contacts-item:not(:last-child) {
-    margin-right: 50px;
+.contacts__icon {
+    margin-right: 10px;
+    fill: var(--primery-text-color);
+    transition: fill 250ms var(--transition-timing);
+
+    .contacts__link:hover &,
+    .contacts__link:focus & {
+        fill: var(--links-hover-color);
+    }
+}
+
+.contacts__icon--envelope {
+    width: 16px;
+    height: 12px;
+}
+
+.contacts__icon--smartphone {
+    width: 10px;
+    height: 16px;
 }

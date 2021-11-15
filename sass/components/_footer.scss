@@ -56,15 +56,15 @@
 .footer-social-link {
     background: var(--footer-social-icon-color);
     transition: background-color 250ms var(--transition-timing);
+
+    &:hover,
+    &:focus {
+        background-color: var(--links-hover-color);
+    }
 }
 
 .footer-social-icon {
     fill: var(--first-background-color);
-}
-
-.footer-social-link:hover,
-.footer-social-link:focus {
-    background-color: var(--links-hover-color);
 }
 
 .footer-form {
@@ -92,10 +92,10 @@
     border-radius: 4px;
     background-color: inherit;
     color: var(--first-background-color);
-}
 
-.footer-form-input:focus {
-    outline: none;
+    &:focus {
+        outline: none;
+    }
 }
 
 .footer-form-button {
@@ -112,11 +112,11 @@
     background-color: var(--links-hover-color);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     transition: background-color 250ms var(--transition-timing);
-}
 
-.footer-form-button:hover,
-.footer-form-button:focus {
-    background-color: var(--button-hover-color);
+    &:hover,
+    &:focus {
+        background-color: var(--button-hover-color);
+    }
 }
 
 .modal-form-button-icon {

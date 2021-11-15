@@ -1,0 +1,26 @@
+//UTILS
+@import './utils/variables';
+@import './utils/visually-hidden';
+
+//BASE
+@import './base/common';
+
+//COMPONENTS
+@import './components/container';
+@import './components/button';
+@import './components/social-links';
+@import './components/pre-title';
+@import './components/after-title';
+@import './components/section-title';
+
+//LAYOUT
+@import './layout/header';
+@import './layout/hero';
+@import './layout/about';
+@import './layout/prices';
+@import './layout/reasons';
+@import './layout/masters';
+@import './layout/gallery';
+@import './layout/contacts';
+@import './layout/footer';
+@import './layout/online';
